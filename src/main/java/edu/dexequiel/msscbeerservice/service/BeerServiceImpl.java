@@ -5,9 +5,13 @@ import edu.dexequiel.msscbeerservice.exception.NotFoundException;
 import edu.dexequiel.msscbeerservice.mapper.BeerMapper;
 import edu.dexequiel.msscbeerservice.repositories.BeerRepository;
 import edu.dexequiel.msscbeerservice.web.model.BeerDto;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
+@RequiredArgsConstructor
 public class BeerServiceImpl implements BeerService {
 
     private BeerRepository repository;

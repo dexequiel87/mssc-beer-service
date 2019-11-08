@@ -3,6 +3,7 @@ package edu.dexequiel.msscbeerservice.web.controller;
 import edu.dexequiel.msscbeerservice.service.BeerService;
 import edu.dexequiel.msscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -15,6 +16,7 @@ import java.util.UUID;
 @RequestMapping("/api/v1/beers")
 public class BeerController {
 
+    @Autowired
     private BeerService beerService;
 
     @GetMapping("/{uuid}")
