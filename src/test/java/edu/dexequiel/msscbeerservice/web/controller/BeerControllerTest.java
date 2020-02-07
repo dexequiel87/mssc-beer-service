@@ -31,7 +31,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @ExtendWith(RestDocumentationExtension.class)
 @AutoConfigureRestDocs
-@WebMvcTest(BeerController.class)
+@WebMvcTest//(BeerController.class)
 class BeerControllerTest {
 
     @Autowired
