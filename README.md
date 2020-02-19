@@ -3,3 +3,5 @@
 # MSSC Beer Service
 
 Spring Boot microservice example for training purpose
+
+This project is currently not being continued due to author's unavailability.
